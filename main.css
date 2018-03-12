@@ -6,8 +6,8 @@
 
 body {
 	background: #333;
-	/*Removing scrollers*/
-	overflow: hidden;
+	/*Removing x-scrollers*/
+	overflow-x: hidden;
 	/*A high perspective to give the UL an isometric look*/
 	perspective: 3000;
 }
@@ -29,12 +29,19 @@ h2 {
 a {
 	color: #fff;
 	display: inline-block;
-	font: 30px 'Open Sans';
+	font: 23px 'Open Sans';
 	text-decoration: none;
 }
 
+.nav {
+	position: fixed;
+	top: 8%;
+	right: 6%;
+	list-style: none;
+}
+
 .grid {
-	position: absolute; top: 100px; left: 0;
+	position: absolute; top: 100px; left: 110px;
 	/*Width = (225 + 20 + 20) * 4 = 1060*/
 	width: 1060px;
 	/*3D Transform*/
